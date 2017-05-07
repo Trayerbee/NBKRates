@@ -520,6 +520,7 @@
 				FC3ED4661EBED39500055A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC3ED4671EBED39500055A9E /* Build configuration list for PBXNativeTarget "NBKRatesTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +529,7 @@
 				FC3ED4691EBED39500055A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC3ED46A1EBED39500055A9E /* Build configuration list for PBXNativeTarget "NBKRatesUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +538,7 @@
 				FC3ED46C1EBED39500055A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
