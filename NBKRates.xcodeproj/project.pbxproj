@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC471AA1589A10CCCE430E03 /* Pods_NBKRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF1040F0682FBC9DCD5C610 /* Pods_NBKRates.framework */; };
 		FC3ED43E1EBED39500055A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3ED43D1EBED39500055A9E /* AppDelegate.swift */; };
 		FC3ED4401EBED39500055A9E /* CurrenciesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3ED43F1EBED39500055A9E /* CurrenciesTable.swift */; };
 		FC3ED4451EBED39500055A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3ED4431EBED39500055A9E /* Main.storyboard */; };
 		FC3ED4471EBED39500055A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3ED4461EBED39500055A9E /* Assets.xcassets */; };
 		FC3ED44A1EBED39500055A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3ED4481EBED39500055A9E /* LaunchScreen.storyboard */; };
-		FC3ED4551EBED39500055A9E /* NBKRatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3ED4541EBED39500055A9E /* NBKRatesTests.swift */; };
-		FC3ED4601EBED39500055A9E /* NBKRatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3ED45F1EBED39500055A9E /* NBKRatesUITests.swift */; };
+		FC6D717A1F053B2C002CCB34 /* FeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D71791F053B2C002CCB34 /* FeedManager.swift */; };
+		FC6D717C1F053DCD002CCB34 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D717B1F053DCD002CCB34 /* Currency.swift */; };
 		FC8625871F0502080003A643 /* FeedChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8625821F0502080003A643 /* FeedChannel.swift */; };
 		FC8625881F0502080003A643 /* FeedEnclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8625831F0502080003A643 /* FeedEnclosure.swift */; };
 		FC8625891F0502080003A643 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8625841F0502080003A643 /* FeedItem.swift */; };
@@ -22,26 +23,30 @@
 		FC86258E1F0509490003A643 /* String+RemoveHTMLCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC86258C1F0509490003A643 /* String+RemoveHTMLCharacters.swift */; };
 		FC86258F1F0509490003A643 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC86258D1F0509490003A643 /* String+Utilities.swift */; };
 		FC8625911F050B670003A643 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8625901F050B670003A643 /* CurrencyTableViewCell.swift */; };
+		FC8625A41F0515FA0003A643 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8625A31F0515FA0003A643 /* ChartViewController.swift */; };
+		FC8625A61F0538DF0003A643 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC8625A51F0538DF0003A643 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FC3ED4511EBED39500055A9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC3ED4321EBED39500055A9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FC3ED4391EBED39500055A9E;
-			remoteInfo = NBKRates;
+/* Begin PBXCopyFilesBuildPhase section */
+		FC8625A11F0515990003A643 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC3ED45C1EBED39500055A9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC3ED4321EBED39500055A9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FC3ED4391EBED39500055A9E;
-			remoteInfo = NBKRates;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08BA7C66F3885A8739448BA4 /* Pods-NBKRatesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBKRatesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBKRatesTests/Pods-NBKRatesTests.release.xcconfig"; sourceTree = "<group>"; };
+		0EF1040F0682FBC9DCD5C610 /* Pods_NBKRates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBKRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A1661E42E5FAFED8BB4CE1 /* Pods-NBKRatesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBKRatesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBKRatesTests/Pods-NBKRatesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E0C9C6E1EC8BC489FDEF12F /* Pods_NBKRatesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBKRatesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F3E0F029665CC507886AD9 /* Pods-NBKRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBKRates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBKRates/Pods-NBKRates.debug.xcconfig"; sourceTree = "<group>"; };
+		E511DD5ADDE37CA4CD118F7B /* Pods-NBKRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBKRates.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBKRates/Pods-NBKRates.release.xcconfig"; sourceTree = "<group>"; };
 		FC3ED43A1EBED39500055A9E /* NBKRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBKRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3ED43D1EBED39500055A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3ED43F1EBED39500055A9E /* CurrenciesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTable.swift; sourceTree = "<group>"; };
@@ -49,12 +54,11 @@
 		FC3ED4461EBED39500055A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC3ED4491EBED39500055A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC3ED44B1EBED39500055A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC3ED4501EBED39500055A9E /* NBKRatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBKRatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC3ED4541EBED39500055A9E /* NBKRatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBKRatesTests.swift; sourceTree = "<group>"; };
-		FC3ED4561EBED39500055A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC3ED45B1EBED39500055A9E /* NBKRatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBKRatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3ED45F1EBED39500055A9E /* NBKRatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBKRatesUITests.swift; sourceTree = "<group>"; };
 		FC3ED4611EBED39500055A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4F88F71F05436300567028 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../Library/Developer/Xcode/DerivedData/NBKRates-dvxchxwdkuhmmdgekgiqocdfboac/Build/Products/Debug-iphonesimulator/Charts/Charts.framework"; sourceTree = "<group>"; };
+		FC6D71791F053B2C002CCB34 /* FeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedManager.swift; sourceTree = "<group>"; };
+		FC6D717B1F053DCD002CCB34 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		FC8625821F0502080003A643 /* FeedChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedChannel.swift; sourceTree = "<group>"; };
 		FC8625831F0502080003A643 /* FeedEnclosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedEnclosure.swift; sourceTree = "<group>"; };
 		FC8625841F0502080003A643 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		FC86258C1F0509490003A643 /* String+RemoveHTMLCharacters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RemoveHTMLCharacters.swift"; sourceTree = "<group>"; };
 		FC86258D1F0509490003A643 /* String+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
 		FC8625901F050B670003A643 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		FC8625A31F0515FA0003A643 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		FC8625A51F0538DF0003A643 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,33 +76,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC3ED44D1EBED39500055A9E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC3ED4581EBED39500055A9E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DC471AA1589A10CCCE430E03 /* Pods_NBKRates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51C716F08389DBC9FFCE2772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F88F71F05436300567028 /* Charts.framework */,
+				0EF1040F0682FBC9DCD5C610 /* Pods_NBKRates.framework */,
+				2E0C9C6E1EC8BC489FDEF12F /* Pods_NBKRatesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6923FD571936449614554150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5F3E0F029665CC507886AD9 /* Pods-NBKRates.debug.xcconfig */,
+				E511DD5ADDE37CA4CD118F7B /* Pods-NBKRates.release.xcconfig */,
+				13A1661E42E5FAFED8BB4CE1 /* Pods-NBKRatesTests.debug.xcconfig */,
+				08BA7C66F3885A8739448BA4 /* Pods-NBKRatesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC3ED4311EBED39500055A9E = {
 			isa = PBXGroup;
 			children = (
 				FC3ED43C1EBED39500055A9E /* NBKRates */,
-				FC3ED4531EBED39500055A9E /* NBKRatesTests */,
 				FC3ED45E1EBED39500055A9E /* NBKRatesUITests */,
 				FC3ED43B1EBED39500055A9E /* Products */,
+				6923FD571936449614554150 /* Pods */,
+				51C716F08389DBC9FFCE2772 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				FC3ED43A1EBED39500055A9E /* NBKRates.app */,
-				FC3ED4501EBED39500055A9E /* NBKRatesTests.xctest */,
-				FC3ED45B1EBED39500055A9E /* NBKRatesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +129,10 @@
 				FC3ED43D1EBED39500055A9E /* AppDelegate.swift */,
 				FC3ED43F1EBED39500055A9E /* CurrenciesTable.swift */,
 				FC3ED4431EBED39500055A9E /* Main.storyboard */,
+				FC8625A31F0515FA0003A643 /* ChartViewController.swift */,
 				FC8625901F050B670003A643 /* CurrencyTableViewCell.swift */,
+				FC6D717B1F053DCD002CCB34 /* Currency.swift */,
+				FC6D71791F053B2C002CCB34 /* FeedManager.swift */,
 				FC8625821F0502080003A643 /* FeedChannel.swift */,
 				FC8625831F0502080003A643 /* FeedEnclosure.swift */,
 				FC8625841F0502080003A643 /* FeedItem.swift */,
@@ -127,17 +143,9 @@
 				FC3ED4461EBED39500055A9E /* Assets.xcassets */,
 				FC3ED4481EBED39500055A9E /* LaunchScreen.storyboard */,
 				FC3ED44B1EBED39500055A9E /* Info.plist */,
+				FC8625A51F0538DF0003A643 /* GoogleService-Info.plist */,
 			);
 			path = NBKRates;
-			sourceTree = "<group>";
-		};
-		FC3ED4531EBED39500055A9E /* NBKRatesTests */ = {
-			isa = PBXGroup;
-			children = (
-				FC3ED4541EBED39500055A9E /* NBKRatesTests.swift */,
-				FC3ED4561EBED39500055A9E /* Info.plist */,
-			);
-			path = NBKRatesTests;
 			sourceTree = "<group>";
 		};
 		FC3ED45E1EBED39500055A9E /* NBKRatesUITests */ = {
@@ -156,9 +164,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC3ED4641EBED39500055A9E /* Build configuration list for PBXNativeTarget "NBKRates" */;
 			buildPhases = (
+				57B15E69C2E8E5B7D15FFE08 /* [CP] Check Pods Manifest.lock */,
 				FC3ED4361EBED39500055A9E /* Sources */,
 				FC3ED4371EBED39500055A9E /* Frameworks */,
 				FC3ED4381EBED39500055A9E /* Resources */,
+				FC8625A11F0515990003A643 /* Embed Frameworks */,
+				0416B1EEB7FC81EAE250E19F /* [CP] Embed Pods Frameworks */,
+				5D7E7EDFB73DDFE3D6BBEBD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,42 +180,6 @@
 			productName = NBKRates;
 			productReference = FC3ED43A1EBED39500055A9E /* NBKRates.app */;
 			productType = "com.apple.product-type.application";
-		};
-		FC3ED44F1EBED39500055A9E /* NBKRatesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FC3ED4671EBED39500055A9E /* Build configuration list for PBXNativeTarget "NBKRatesTests" */;
-			buildPhases = (
-				FC3ED44C1EBED39500055A9E /* Sources */,
-				FC3ED44D1EBED39500055A9E /* Frameworks */,
-				FC3ED44E1EBED39500055A9E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FC3ED4521EBED39500055A9E /* PBXTargetDependency */,
-			);
-			name = NBKRatesTests;
-			productName = NBKRatesTests;
-			productReference = FC3ED4501EBED39500055A9E /* NBKRatesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FC3ED45A1EBED39500055A9E /* NBKRatesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FC3ED46A1EBED39500055A9E /* Build configuration list for PBXNativeTarget "NBKRatesUITests" */;
-			buildPhases = (
-				FC3ED4571EBED39500055A9E /* Sources */,
-				FC3ED4581EBED39500055A9E /* Frameworks */,
-				FC3ED4591EBED39500055A9E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FC3ED45D1EBED39500055A9E /* PBXTargetDependency */,
-			);
-			name = NBKRatesUITests;
-			productName = NBKRatesUITests;
-			productReference = FC3ED45B1EBED39500055A9E /* NBKRatesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -219,18 +195,6 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 7452627F72;
 						ProvisioningStyle = Automatic;
-					};
-					FC3ED44F1EBED39500055A9E = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 7452627F72;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FC3ED4391EBED39500055A9E;
-					};
-					FC3ED45A1EBED39500055A9E = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 7452627F72;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FC3ED4391EBED39500055A9E;
 					};
 				};
 			};
@@ -248,8 +212,6 @@
 			projectRoot = "";
 			targets = (
 				FC3ED4391EBED39500055A9E /* NBKRates */,
-				FC3ED44F1EBED39500055A9E /* NBKRatesTests */,
-				FC3ED45A1EBED39500055A9E /* NBKRatesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,26 +222,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3ED44A1EBED39500055A9E /* LaunchScreen.storyboard in Resources */,
+				FC8625A61F0538DF0003A643 /* GoogleService-Info.plist in Resources */,
 				FC3ED4471EBED39500055A9E /* Assets.xcassets in Resources */,
 				FC3ED4451EBED39500055A9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC3ED44E1EBED39500055A9E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC3ED4591EBED39500055A9E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0416B1EEB7FC81EAE250E19F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBKRates/Pods-NBKRates-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57B15E69C2E8E5B7D15FFE08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D7E7EDFB73DDFE3D6BBEBD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBKRates/Pods-NBKRates-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC3ED4361EBED39500055A9E /* Sources */ = {
@@ -289,46 +286,20 @@
 				FC86258B1F0502080003A643 /* NSDate+FeedsDate.swift in Sources */,
 				FC8625871F0502080003A643 /* FeedChannel.swift in Sources */,
 				FC8625891F0502080003A643 /* FeedItem.swift in Sources */,
+				FC6D717A1F053B2C002CCB34 /* FeedManager.swift in Sources */,
 				FC86258A1F0502080003A643 /* FeedParser.swift in Sources */,
 				FC8625911F050B670003A643 /* CurrencyTableViewCell.swift in Sources */,
 				FC86258F1F0509490003A643 /* String+Utilities.swift in Sources */,
 				FC8625881F0502080003A643 /* FeedEnclosure.swift in Sources */,
+				FC6D717C1F053DCD002CCB34 /* Currency.swift in Sources */,
 				FC3ED43E1EBED39500055A9E /* AppDelegate.swift in Sources */,
 				FC3ED4401EBED39500055A9E /* CurrenciesTable.swift in Sources */,
 				FC86258E1F0509490003A643 /* String+RemoveHTMLCharacters.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC3ED44C1EBED39500055A9E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC3ED4551EBED39500055A9E /* NBKRatesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC3ED4571EBED39500055A9E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC3ED4601EBED39500055A9E /* NBKRatesUITests.swift in Sources */,
+				FC8625A41F0515FA0003A643 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FC3ED4521EBED39500055A9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FC3ED4391EBED39500055A9E /* NBKRates */;
-			targetProxy = FC3ED4511EBED39500055A9E /* PBXContainerItemProxy */;
-		};
-		FC3ED45D1EBED39500055A9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FC3ED4391EBED39500055A9E /* NBKRates */;
-			targetProxy = FC3ED45C1EBED39500055A9E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC3ED4431EBED39500055A9E /* Main.storyboard */ = {
@@ -447,6 +418,7 @@
 		};
 		FC3ED4651EBED39500055A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5F3E0F029665CC507886AD9 /* Pods-NBKRates.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7452627F72;
@@ -460,6 +432,7 @@
 		};
 		FC3ED4661EBED39500055A9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E511DD5ADDE37CA4CD118F7B /* Pods-NBKRates.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7452627F72;
@@ -468,64 +441,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kz.trayerbee.NBKRates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		FC3ED4681EBED39500055A9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7452627F72;
-				INFOPLIST_FILE = NBKRatesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kz.trayerbee.NBKRatesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBKRates.app/NBKRates";
-			};
-			name = Debug;
-		};
-		FC3ED4691EBED39500055A9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7452627F72;
-				INFOPLIST_FILE = NBKRatesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kz.trayerbee.NBKRatesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBKRates.app/NBKRates";
-			};
-			name = Release;
-		};
-		FC3ED46B1EBED39500055A9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 7452627F72;
-				INFOPLIST_FILE = NBKRatesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kz.trayerbee.NBKRatesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = NBKRates;
-			};
-			name = Debug;
-		};
-		FC3ED46C1EBED39500055A9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 7452627F72;
-				INFOPLIST_FILE = NBKRatesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kz.trayerbee.NBKRatesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = NBKRates;
 			};
 			name = Release;
 		};
@@ -546,24 +461,6 @@
 			buildConfigurations = (
 				FC3ED4651EBED39500055A9E /* Debug */,
 				FC3ED4661EBED39500055A9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FC3ED4671EBED39500055A9E /* Build configuration list for PBXNativeTarget "NBKRatesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FC3ED4681EBED39500055A9E /* Debug */,
-				FC3ED4691EBED39500055A9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FC3ED46A1EBED39500055A9E /* Build configuration list for PBXNativeTarget "NBKRatesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FC3ED46B1EBED39500055A9E /* Debug */,
-				FC3ED46C1EBED39500055A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,31 +8,48 @@
 
 import UIKit
 
-class CurrenciesTable: UITableViewController, FeedParserDelegate {
-    var parser:FeedParser?
-    var tableData:Array<FeedItem> = []
+class CurrenciesTable: UITableViewController, FeedManagerDelegate {
+    var manager:FeedManager?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.parser = FeedParser(feedURL:"http://www.nationalbank.kz/rss/rates_all.xml")
-        self.parser?.delegate = self
-        self.parser?.parse()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.manager = FeedManager()
+        self.manager?.delegate = self
     }
-    func feedParser(_ parser: FeedParser, didParseItem item: FeedItem) {
-        self.tableData.append(item)
+    func finishedParsing() {
         self.tableView.reloadData()
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.tableData.count
+        if let manager = self.manager {
+            return manager.tableData.count
+        }
+        return 0
      }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> CurrencyTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "currencyCell") as! CurrencyTableViewCell
-        let currency = self.tableData[indexPath.row]
-        cell.configureWith(feedItem: currency)
+        guard let manager = self.manager else{
+            return cell
+        }
+        let currency = manager.tableData[indexPath.row]
+        cell.configureWith(currency: currency)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let manager = self.manager{
+            let currency = manager.tableData[indexPath.row]
+            self.performSegue(withIdentifier: "chart", sender: currency)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let manager = self.manager{
+            let chart:ChartViewController = segue.destination as! ChartViewController
+            chart.currency = sender as! Currency
+            chart.manager = manager
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

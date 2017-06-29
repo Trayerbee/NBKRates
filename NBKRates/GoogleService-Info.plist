@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>764752263232-g9541578vbikm0rkj7k57eftd2495k5m.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.764752263232-g9541578vbikm0rkj7k57eftd2495k5m</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCpqHzqYGCO5aV4OpV40h0D7TARFOUcdSo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>764752263232</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kz.trayerbee.NBKRates</string>
+	<key>PROJECT_ID</key>
+	<string>nbkrateschart</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nbkrateschart.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:764752263232:ios:05c895f24bb6e850</string>
+	<key>DATABASE_URL</key>
+	<string>https://nbkrateschart.firebaseio.com</string>
+</dict>
+</plist>

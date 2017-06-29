@@ -94,10 +94,57 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Currencices" id="tSp-tR-1Jd"/>
+                    <connections>
+                        <segue destination="qGE-OA-VJf" kind="show" identifier="chart" id="jGG-KM-24V"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WrW-QD-faP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701.5999999999999" y="-340.47976011994007"/>
+            <point key="canvasLocation" x="1708" y="-340"/>
+        </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="obm-Jc-TGK">
+            <objects>
+                <viewController id="qGE-OA-VJf" customClass="ChartViewController" customModule="NBKRates" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NLl-dS-qR8"/>
+                        <viewControllerLayoutGuide type="bottom" id="b7D-Cx-4B5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Rv-3o-ttp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxq-td-ZZx" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ReI-8h-41M">
+                                        <rect key="frame" x="169" y="279" width="37" height="37"/>
+                                        <color key="color" red="0.1411764771" green="0.3960784376" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ReI-8h-41M" firstAttribute="centerX" secondItem="zxq-td-ZZx" secondAttribute="centerX" id="C96-TU-0Rf"/>
+                                    <constraint firstItem="ReI-8h-41M" firstAttribute="centerY" secondItem="zxq-td-ZZx" secondAttribute="centerY" id="LFN-8K-Csh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zxq-td-ZZx" firstAttribute="top" secondItem="NLl-dS-qR8" secondAttribute="bottom" constant="8" symbolic="YES" id="AsX-uV-iSB"/>
+                            <constraint firstItem="zxq-td-ZZx" firstAttribute="leading" secondItem="4Rv-3o-ttp" secondAttribute="leading" id="Asp-pI-sAt"/>
+                            <constraint firstItem="zxq-td-ZZx" firstAttribute="bottom" secondItem="b7D-Cx-4B5" secondAttribute="top" id="wb1-W5-IQL"/>
+                            <constraint firstAttribute="trailing" secondItem="zxq-td-ZZx" secondAttribute="trailing" id="wlE-tb-5or"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ReI-8h-41M" id="B8G-iB-tAt"/>
+                        <outlet property="chartView" destination="zxq-td-ZZx" id="Zyx-W7-vnO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2w-0x-Ycl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2592.8000000000002" y="-340.47976011994007"/>
         </scene>
         <!--Rates-->
         <scene sceneID="ugy-eB-e6h">
